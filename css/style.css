@@ -26,12 +26,12 @@ article div {
 
 section {
   background-image: url(../assets/bg-image.png);
-  background-size: contain;
+  background-size: 92%;
   background-repeat: repeat;
-  background-position: 1em, 1em;
+  background-position: 0em -1em;
   overflow: hidden;
   padding-top: 3em;
-  padding-bottom: 2em;
+  padding-bottom: 4em;
 }
 
 header div img {
@@ -109,6 +109,10 @@ footer div img {
   margin-top: 2em;
 }
 
+.m-3r {
+  margin-right: 3em;
+}
+
 .links {
   text-decoration: none;
 }
@@ -135,6 +139,9 @@ footer div img {
 
 .card-img {
   display: inline-block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .overflowed {
@@ -144,12 +151,14 @@ footer div img {
 .card {
   display: inline-block;
   width: 20%;
-  border: 0, auto;
   height: 25em;
   border-radius: 30px;
-  object-fit: contain;
 }
 
 .img-resize {
   width: 100%;
+}
+
+.shadowed {
+  box-shadow: 30px 15px 30px #d4d8dd;
 }
