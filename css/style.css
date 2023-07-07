@@ -20,10 +20,16 @@ article {
   background-color: #ffffff;
 }
 
+article div {
+  margin: auto;
+}
+
 section {
   background-image: url(../assets/bg-image.png);
-  background-repeat: repeat-y;
-  background-size: 100%;
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: 1em, 1em;
+  overflow: hidden;
   padding-top: 3em;
   padding-bottom: 2em;
 }
@@ -32,6 +38,10 @@ header div img {
   display: block;
   height: 60px;
   padding-top: 1em;
+}
+
+footer div img {
+  width: 300px;
 }
 
 /* classes */
@@ -78,8 +88,21 @@ header div img {
   padding-bottom: 1em;
 }
 
+.p-4tb {
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
 .p-1b {
   padding-bottom: 0.5em;
+}
+
+.p-1t {
+  padding-top: 0.5em;
+}
+
+.p-2b {
+  padding-bottom: 2em;
 }
 
 .m-2t {
@@ -106,6 +129,10 @@ header div img {
   font-weight: 700;
 }
 
+.semibold {
+  font-weight: 500;
+}
+
 .card-img {
   display: inline-block;
 }
@@ -121,4 +148,8 @@ header div img {
   height: 25em;
   border-radius: 30px;
   object-fit: contain;
+}
+
+.img-resize {
+  width: 100%;
 }
